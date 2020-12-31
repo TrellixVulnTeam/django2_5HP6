@@ -1,0 +1,21 @@
+pip install django whitenoise gunicorn django-bootstrap4 django-stdimage psycopg2
+
+django2>pip install dj_database_url psycopg2-binary
+
+pip freeze > requirements.txt
+
+django-admin startproject django2 .
+
+django-admin startapp core
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py shell
+
+Signals -> Tratrativa dos dados antes ou depois de inserir no Banco de Dados
+
+Slugify -> tranforma o titulo em um slug
+
+Classe abstrata não é criada no Banco de Dados, serve de racunho para outras classes
